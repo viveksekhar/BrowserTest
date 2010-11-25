@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Welcome to Basic HTML & JS Test Page</title>
+    <style type="text/css">
+body
+{
+background-color:#d0e4fe;
+}
+h1
+{
+font-family:"Times New Roman";
+color:orange;
+text-align:center;
+font-size:24px;
+}
+p
+{
+font-family:"Times New Roman";
+font-size:14px;
+color:blue;
+}
+p.padding
+{
+padding-right:50px;
+}
+</style>
+
+    <script type="text/javascript">
+function test_alert()
+{
+alert("Yep you got a alert box!");
+}
+function test_confirm()
+{
+var result=confirm("Click a button!");
+if (result==true)
+  {
+  alert("OK was Pressed!");
+  }
+else
+  {
+  alert("Cancel was Pressed!");
+  }
+}
+function test_prompt()
+{
+var name=prompt("What is your name","Vivek Sekhar");
+if (name!=null && name!="")
+  {
+  document.write("Hello " + name + "! How are you today?");
+  }
+}
+    </script>
+
+</head>
+<body>
+    <br>
+    <h1>
+        Welcome to Basic HTML & JS Test Page
+    </h1>
+    <form>
+        <p>Select the Car your drive</p>
+        <select>
+            <option>Volvo</option>
+            <option>Saab</option>
+            <option>Mercedes</option>
+            <option>Audi</option>
+            <option>BMW</option>
+            <option>Acura</option>
+        </select>
+        <br />
+        <br />
+        <p>How do you get to work</p>
+        <input type="checkbox" name="vehicle" value="Bike" />Bike
+        <input type="checkbox" name="vehicle" value="Car" />Car
+        <input type="checkbox" name="vehicle" value="Bus" />Bus
+        <input type="checkbox" name="vehicle" value="Trolley" />Trolley
+        <br>
+        <br>
+        <p>Select your gender</p>
+        <input type="radio" name="sex" value="male" />
+        Male
+        <input type="radio" name="sex" value="female" />
+        Female
+        <br>
+        <br>
+        <p class="padding">Select the OS's that you know!!</p>
+        <select multiple size="5">
+            <option value="o1">Android </option>
+            <option value="o2">BREWMP</option>
+            <option value="o3">J2ME</option>
+            <option value="o3">IOS</option>
+        </select>
+        <br>
+        <br>
+        <p>Select a User Name</p>
+        <input name="username" />
+        <br>
+        <p>Select a Password</p>
+        <input type="password" name="pwd" />
+       
+       
+    </form>
+     <input type="button" onclick="test_alert()" value="Test alert box" />
+        <br>
+        <br>
+        <input type="button" onclick="test_confirm()" value="Test a confirm box" />
+        <br>
+        <br>
+        <input type="button" onclick="test_prompt()" value="Test prompt box" />
+    <!--
+<p>This is first embed tag</p>
+<embed src="fs:/shared/videotest.mp4" type="video/mpeg" width="400" height="600">
+<br>!-->
+</body>
+</html>
